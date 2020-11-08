@@ -1,5 +1,6 @@
 <div class="container-fluid">
-    <h2 class="text-center">Create a new Quote</h2>
+    <div class="kando">
+        <h2 class="text-center">Create a new Quote</h2>
     <hr>
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
 
@@ -33,9 +34,13 @@
 
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p>your name is required</p>
+                
             </div>
         </div>
 
         <button type="submit" class="btn btn-success">Add Quote</button>
     </form>
+
+    </div>
+    
 </div>

@@ -4,16 +4,34 @@
 
 .txt{
     font-size: 100px;
+    color: antiquewhite;
+
 }
 
+/* .txt1{
+    color: white;
+} */
+
+
 .jumbotron{
-    background-color: brown;
+    background-color:black;
 }
 
 .row{
     align-items: center;
-    background-color: blue;
+    background-color: #865200;
+    font-size: 20px;
 }
+
+.btn btn-outline-danger{
+    color: antiquewhite;
+}
+
+
+
+.container-fluid, .container-fluid, .form-group{
+    align-items: right;}
+
 
 
 
