@@ -1,29 +1,35 @@
 
 <div class="jumbotron">
+    <div class="top">
+        <h2 style="text-align: center;" class="txt">Quotes Tavern</h2>
+        <h3>
+            <marquee width="60%" direction="left" height="100px" scrollamount="20"><p class="txt2">One quote a day keeps the devil away.<i> <strong>Welcome.</strong></i></p></marquee>
+        </h3>
+       
+        <br>
 
-    <h2 style="text-align: center;">Quotes Tavern</h2>
-    <h2 style="text-align: center;" class="txt1">Quotes Tavern</h2>
-    <marquee width="60%" direction="left" height="100px" scrollamount="20"><p class="txt2">One quote a day keeps the devil away.<i>She will be <strong>impressed.</strong></i></p></marquee>
-    <br>
-    <br>
-    <br>
+    </div>
+
+
+
     <div class="row">
         <div class="col-md-6">
             <div *ngFor='let quote of quotes; let i = index'>
-                <div class="rasta">
+                <div>
                     <p appHighLight *ngIf="highestUpvote()===quote.upvote && quote.upvote>0">{{quote.quote}}</p>
                     <p *ngIf="highestUpvote()!==quote.upvote || quote.upvote===0">" {{quote.quote}} "</p>
- 
                     <button (click)='quoteLike(i)' style="font-size:24px; color:green"> Like<i class="fa fa-thumbs-up" ></i> {{quote.upvote}}</button>
                     <button (click)='quoteUnlike(i)'style="font-size:24px; color:red"> Dislikes <i class="fa fa-thumbs-down" ></i>{{quote.downvote}}</button>
                     <button (click)='toggleDetails(i)' class="btn btn-outline-warning">Toggle Details</button>
                     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDelete)='deleteQuote($event, i)'>
                     </app-quote-detail>
                     <hr>
+
                 </div>
             </div>
         </div>
         <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
-</div>
 
+
+</div>

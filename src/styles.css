@@ -2,16 +2,18 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 
-.txt1{
+.txt{
     font-size: 100px;
 }
 
-.txt2{
-    color: antiquewhite;
+.jumbotron{
+    background-color: brown;
 }
 
-
-
+.row{
+    align-items: center;
+    background-color: blue;
+}
 
 
 
