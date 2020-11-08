@@ -1,6 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-.rasta, #rasta, .row, #row {
-background-color: brown;
+
+.txt1{
+    /* font-weight: 500; */
+    font-size: 100px;
 }
+
+
+
+
+
+
+
+
+
