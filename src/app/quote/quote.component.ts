@@ -11,7 +11,7 @@ export class QuoteComponent implements OnInit {
   quotes: Quote[]=[
     new Quote(1, "What, so everyone’s supposed to sleep every single night now?", "Dr. Rick Sanchez","Brian Kennedy",new Date(8, 11, 2020)),
     new Quote(2, "Perception is the enemy of perfectly adequate.", "Saul Goodman","Brian Kennedy",new Date(8, 11, 2020)),
-    new Quote(2, "Whatever you do in this life, it’s not legendary unless your friends are there to see it.","Barney Stinson","Brian Kennedy",new Date(2019, 7, 23)),
+    new Quote(3, "Whatever you do in this life, it’s not legendary unless your friends are there to see it.","Barney Stinson.","Nice",new Date(8, 11, 2020)),
   ];
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
