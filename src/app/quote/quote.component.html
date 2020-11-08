@@ -1,22 +1,20 @@
-<!-- <p>quote works!</p> -->
-<div class="title" style="text-align:center">
-    <img height="10%" src="assets/logo.png">
-    <!-- <h1 id="title2">~App </h1> -->
-</div>
-<hr>
-<div class="container">
+
+<div class="jumbotron">
+
+    <h2 style="text-align: center;">Quotes Tavern</h2>
+    <br>
+    <br>
+    <br>
 
     <div class="row">
         <div class="col-md-6">
             <div *ngFor='let quote of quotes; let i = index'>
-                <div>
-                    <!-- <h4 id={{i}}>{{quote.quote}}</h4> -->
-
+                <div class="rasta">
                     <p appHighLight *ngIf="highestUpvote()===quote.upvote && quote.upvote>0">{{quote.quote}}</p>
                     <p *ngIf="highestUpvote()!==quote.upvote || quote.upvote===0">" {{quote.quote}} "</p>
  
-                    <button (click)='quoteLike(i)' style="font-size:24px; color:green"> <i class="fa fa-thumbs-up" ></i> {{quote.upvote}}</button>
-                    <button (click)='quoteUnlike(i)'style="font-size:24px; color:red"> <i class="fa fa-thumbs-down" ></i>{{quote.downvote}}</button>
+                    <button (click)='quoteLike(i)' style="font-size:24px; color:green"> Like<i class="fa fa-thumbs-up" ></i> {{quote.upvote}}</button>
+                    <button (click)='quoteUnlike(i)'style="font-size:24px; color:red"> Dislikes <i class="fa fa-thumbs-down" ></i>{{quote.downvote}}</button>
                     <button (click)='toggleDetails(i)' class="btn btn-outline-warning">Toggle Details</button>
                     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDelete)='deleteQuote($event, i)'>
                     </app-quote-detail>

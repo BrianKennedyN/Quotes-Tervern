@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Quotes-Tervern"
+    }
+  },
+  "defaultProject": "Quotes-Tervern",
+  "cli": {
+    "analytics": "7208fa5e-65ad-4a0d-9725-859123dca021"
+  }
 }
