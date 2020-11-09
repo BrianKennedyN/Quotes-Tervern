@@ -34,7 +34,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 **The quotes can be liked, disliked or deleted.
 
 ## Technologies used
-HTML, CSS, TypeScript and Bootstrap,
+HTML, CSS, TypeScript, JavaScript and Bootstrap
 
 ## Setup/Installation Requirements
 ** A device that can access the internet.
