@@ -25,3 +25,25 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Behaviour Driven Development
+
+** The user is required to fill in all fields while adding a new quote.
+
+**The quotes can be liked, disliked or deleted.
+
+## Technologies used
+HTML, CSS, TypeScript and Bootstrap,
+
+## Setup/Installation Requirements
+** A device that can access the internet.
+** The device should have an internet browser to help access the web application.
+** The user is expected to have a sense of humour because the quotes are hilarious.
+
+## Support and contact details
+** phone number: 25419293117
+** Email-adress: amkamjoro@gmail.com
+
+## License
+Copyright (c) 2020 Brian Kennedy Njoroge
